@@ -40,7 +40,7 @@
 			<ul class="mob-ul">
 				<li data-link="/">HOME</li>
 				<li data-link="/buyer-faq">BUYING</li>
-				<li data-link="/sell-my-business">SELLING</li>
+				<li data-link="/sell-my-business-now">SELLING</li>
 				<li data-link="/search-for-businesses-for-sale">BUSINESSES FOR SALE</li>
 				<li data-link="/about-us">ABOUT US</li>
 				<li data-link="/resources">RESOURCES</li>
