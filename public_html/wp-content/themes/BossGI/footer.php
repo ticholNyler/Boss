@@ -63,7 +63,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-<div id="mc_embed_signup">
+<div id="mc_embed_sign up">
 <form action="//BossGI.us11.list-manage.com/subscribe/post?u=117dd5e88bbfe7c555deb4ed4&amp;id=b44052a0f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	
