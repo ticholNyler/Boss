@@ -24,7 +24,10 @@ $dk-blue:#070f30;
 #page-container{
 	overflow:hidden;
 }
-
+.page-nav{
+	width:100%;
+	float:left;
+}
 .blog-head-wrap{
 	margin-top:40px;
 }
@@ -167,105 +170,9 @@ textarea {
 		color:$blue;
 	}
 }
-
-.personal-form_wrapper{
-	h1{
-		font-weight:bold !important;
-		color:$blue;
-	}
-	h2{
-		font-weight:bold !important;
-		color:$blue;
-		margin-top:40px;
-	}
-	.bar-div{
-			width: 75px;
-    		border-top: 10px solid $yellow;
-    		margin-top: 10px;
-    		margin-bottom: 20px;
-		}
-	.gform_button{
-		color:white !important;
-		background:$blue !important;
-		border-style:none !important;
-	}
-	input{
-		height: 36px !important;
-    font-size: 16px !important;
-    padding-left: 10px !important;
-    border-radius: 7px !important;
-    font-family: "Open Sans", Arial, sans-serif !important;
-	}
-	select{
-		height: 36px !important;
-    font-size: 16px !important;
-    padding-left: 10px !important;
-    border-radius: 7px !important;
-    font-family: "Open Sans", Arial, sans-serif !important;
-	}
-	label{
-		font-size:16px !important;
-		font-weight:bold !important;
-		letter-spacing:0px !important;
-	}
-	.total-field{
-		.ginput_product_price_label{
-			display:none !important;
-		}
-		.ginput_product_price{
-			color:#222 !important;
-			font-size:22px !important;
-		}
-	}
-}
-.sell_my_business_wrapper{
-	input{
-		height: 36px !important;
-    font-size: 16px !important;
-    padding-left: 10px !important;
-    border-radius: 7px !important;
-    font-family: "Open Sans", Arial, sans-serif !important;
-	}
-	label{
-		font-size:16px !important;
-		font-weight:bold !important;
-		letter-spacing:0px !important;
-	}
-	.gform_button{
-		color:white !important;
-		background:$blue !important;
-		border-style:none !important;
-	}
-}
-
-.boss-main-content{
-	h4{
-		font-weight:bold;
-	}
-}
 /////////////////////////////////////////////////header
 
 @media (min-width: 1200px){
-	.blog-detail-wrap{
-		padding-bottom:40px;
-		img{
-			width:50%;
-			padding-right:20px;
-			padding-bottom:20px;
-		}
-	}
-	.blog-detail-title{
-		.bar-div{
-			width: 75px;
-    		border-top: 10px solid $yellow;
-    		margin-top: 10px;
-    		margin-bottom: 20px;
-		}
-		h1{
-			font-weight:bold;
-			color:$blue;
-		}
-	}
 	.prof-filter-col{
 		margin-bottom:40px;
 		.prof-filter-wrap{
@@ -281,13 +188,11 @@ textarea {
     		float: left;
     		padding-top: 10px;
     		padding-bottom: 10px;
-    		background: $yellow;
+    		background: $blue;
     		text-align: center;
     		color: white;
     		border-radius: 10px;
-			font-size:18px;
-			font-weight:bold;
-			cursor:pointer;
+    		padding-left: 5px;
 		}
 	}
 	.franchise-cont{
@@ -644,8 +549,8 @@ textarea {
 		margin-top:-6px;
 		padding:0px;
 		width:25% !important;
-		margin-bottom:-6000px;
-		padding-bottom:6000px;
+		margin-bottom:-5000px;
+		padding-bottom:5000px;
 		li{
 			list-style:none;
 			color:$yellow;
@@ -787,50 +692,6 @@ textarea {
 }
 
 @media (max-width: 1200px){
-	.blog-detail-wrap{
-		padding-bottom:40px;
-		img{
-			width:50%;
-			padding-right:20px;
-			padding-bottom:20px;
-		}
-	}
-	.blog-detail-title{
-		.bar-div{
-			width: 75px;
-    		border-top: 10px solid $yellow;
-    		margin-top: 10px;
-    		margin-bottom: 20px;
-		}
-		h1{
-			font-weight:bold;
-			color:$blue;
-		}
-	}
-	.prof-filter-col{
-		margin-bottom:40px;
-		.prof-filter-wrap{
-			width:300px;
-			float:left;
-		}
-		select{
-			height: 42px;
-    		font-size: 18px;
-		}
-		.filter-prof-button{
-			width: 100px;
-    		float: left;
-    		padding-top: 10px;
-    		padding-bottom: 10px;
-    		background: $yellow;
-    		text-align: center;
-    		color: white;
-    		border-radius: 10px;
-			font-size:18px;
-			font-weight:bold;
-			cursor:pointer;
-		}
-	}
 	.single-agent-cont{
 		padding-bottom:60px;
 	}
@@ -2086,7 +1947,7 @@ textarea {
 			font-size:18px !important;
 		}
 		h3{
-			font-size:18px !important;
+			font-size:14px !important;
 			margin-bottom:0px !important;
 		}
 		
@@ -2302,6 +2163,7 @@ font-family: FontAwesome;
 			color:white;
 			font-weight:bold;
 			font-size:22px;
+			min-height:64px;
 		}
 		h3{
 			color:white;
@@ -3403,8 +3265,8 @@ font-family: FontAwesome;
 		margin-top:-6px;
 		padding:0px;
 		width:25% !important;
-		margin-bottom:-6000px;
-		padding-bottom:6000px;
+		margin-bottom:-5000px;
+		padding-bottom:5000px;
 		li{
 			list-style:none;
 			color:$yellow;
@@ -3629,10 +3491,11 @@ font-family: FontAwesome;
 			color:white;
 			font-weight:bold;
 			font-size:18px;
+			min-height:64px;
 		}
 		h3{
 			color:white;
-			font-size:18px;
+			font-size:14px;
 		}
 	}
 	
@@ -3761,55 +3624,6 @@ font-family: FontAwesome;
 
 /////////////////////////////////////////////////////////////////MOBILE///////////////////////////////////////
 @media (max-width: 980px){
-	.blog-detail-wrap{
-		padding-bottom:40px;
-		img{
-			width:100%;
-			padding-right:20px;
-			padding-bottom:20px;
-		}
-	}
-	.blog-detail-title{
-		.bar-div{
-			width: 75px;
-    		border-top: 10px solid $yellow;
-    		margin-top: 10px;
-    		margin-bottom: 20px;
-		}
-		h1{
-			font-weight:bold;
-			color:$blue;
-		}
-	}
-	
-	.prof-filter-col{
-		margin-bottom:40px;
-		overflow:auto;
-		.prof-filter-wrap{
-			width:100%;
-			float:left;
-			margin-bottom:20px;
-		}
-		select{
-			height: 42px;
-    		font-size: 18px;
-			width:100%;
-		}
-		.filter-prof-button{
-			width: 100%;
-    		float: left;
-    		padding-top: 10px;
-    		padding-bottom: 10px;
-    		background: $yellow;
-    		text-align: center;
-    		color: white;
-    		border-radius: 10px;
-			font-size:18px;
-			font-weight:bold;
-			cursor:pointer;
-			margin-bottom:20px;
-		}
-	}
 		.featured-desc-wrapper{
 		background:$blue;
 		.container{
@@ -5148,7 +4962,7 @@ font-family: FontAwesome;
 		}
 		h3{
 			color:white;
-			font-size:18px;
+			font-size:14px;
 		}
 	}
 	

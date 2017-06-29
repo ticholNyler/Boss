@@ -20,6 +20,7 @@ $thisindex = array_search( $post_id, $ids );
 $previd = $ids[ $thisindex - 1 ];
 $nextid = $ids[ $thisindex + 1 ];
 
+
 get_header();
 
 ?>
@@ -238,7 +239,7 @@ get_header();
 			<?php $report = get_sub_field('report_type');?>
 			<?php $gross = get_sub_field('gross_income');?>
 			<?php $cogs = get_sub_field('cogs');?>
-			<?php $grossProfit = get_sub_field('report_type');?>
+			<?php $grossProfit = get_sub_field('gross_profit');?>
 			<?php $expenses = get_sub_field('expenses');?>
 			<?php $net = get_sub_field('net');?>
 			<?php $adbacks = get_sub_field('adbacks');?>

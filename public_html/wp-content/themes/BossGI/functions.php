@@ -702,24 +702,25 @@ define(SINGLE_PATH, get_stylesheet_directory() . '/single');
 function my_single_template($single) {
 global $wp_query, $post;
 	
-
+$flag = '';
 /**
 * Checks for single template by category
 * Check by category slug and ID
 */
 foreach((array)get_the_category() as $cat) :
 
-if(file_exists(SINGLE_PATH . '/single-cat-' . $cat->slug . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->slug . '.php';
 
-elseif(file_exists(SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php';
-	
-elseif(!file_exists(SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php'))
-return SINGLE_PATH . '.php';
+if(file_exists(SINGLE_PATH . '/single-cat-' . $cat->slug . '.php'))
+$flag = SINGLE_PATH . '/single-cat-' . $cat->slug . '.php';
 
 
 endforeach;
+	
+	if($flag == ''){
+		return SINGLE_PATH . '.php';
+	}else{
+		return $flag;
+	}
 }
 
 /**

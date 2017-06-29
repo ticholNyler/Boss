@@ -12,6 +12,10 @@ Version: 1.0
 #page-container {
   overflow: hidden; }
 
+.page-nav {
+  width: 100%;
+  float: left; }
+
 .blog-head-wrap {
   margin-top: 40px; }
 
@@ -127,79 +131,7 @@ textarea {
   .pro-wrap h4 {
     color: #15264f; }
 
-.personal-form_wrapper h1 {
-  font-weight: bold !important;
-  color: #15264f; }
-.personal-form_wrapper h2 {
-  font-weight: bold !important;
-  color: #15264f;
-  margin-top: 40px; }
-.personal-form_wrapper .bar-div {
-  width: 75px;
-  border-top: 10px solid #cca12c;
-  margin-top: 10px;
-  margin-bottom: 20px; }
-.personal-form_wrapper .gform_button {
-  color: white !important;
-  background: #15264f !important;
-  border-style: none !important; }
-.personal-form_wrapper input {
-  height: 36px !important;
-  font-size: 16px !important;
-  padding-left: 10px !important;
-  border-radius: 7px !important;
-  font-family: "Open Sans", Arial, sans-serif !important; }
-.personal-form_wrapper select {
-  height: 36px !important;
-  font-size: 16px !important;
-  padding-left: 10px !important;
-  border-radius: 7px !important;
-  font-family: "Open Sans", Arial, sans-serif !important; }
-.personal-form_wrapper label {
-  font-size: 16px !important;
-  font-weight: bold !important;
-  letter-spacing: 0px !important; }
-.personal-form_wrapper .total-field .ginput_product_price_label {
-  display: none !important; }
-.personal-form_wrapper .total-field .ginput_product_price {
-  color: #222 !important;
-  font-size: 22px !important; }
-
-.sell_my_business_wrapper input {
-  height: 36px !important;
-  font-size: 16px !important;
-  padding-left: 10px !important;
-  border-radius: 7px !important;
-  font-family: "Open Sans", Arial, sans-serif !important; }
-.sell_my_business_wrapper label {
-  font-size: 16px !important;
-  font-weight: bold !important;
-  letter-spacing: 0px !important; }
-.sell_my_business_wrapper .gform_button {
-  color: white !important;
-  background: #15264f !important;
-  border-style: none !important; }
-
-.boss-main-content h4 {
-  font-weight: bold; }
-
 @media (min-width: 1200px) {
-  .blog-detail-wrap {
-    padding-bottom: 40px; }
-    .blog-detail-wrap img {
-      width: 50%;
-      padding-right: 20px;
-      padding-bottom: 20px; }
-
-  .blog-detail-title .bar-div {
-    width: 75px;
-    border-top: 10px solid #cca12c;
-    margin-top: 10px;
-    margin-bottom: 20px; }
-  .blog-detail-title h1 {
-    font-weight: bold;
-    color: #15264f; }
-
   .prof-filter-col {
     margin-bottom: 40px; }
     .prof-filter-col .prof-filter-wrap {
@@ -213,13 +145,11 @@ textarea {
       float: left;
       padding-top: 10px;
       padding-bottom: 10px;
-      background: #cca12c;
+      background: #15264f;
       text-align: center;
       color: white;
       border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer; }
+      padding-left: 5px; }
 
   .franchise-cont {
     padding-bottom: 80px; }
@@ -492,8 +422,8 @@ textarea {
     margin-top: -6px;
     padding: 0px;
     width: 25% !important;
-    margin-bottom: -6000px;
-    padding-bottom: 6000px; }
+    margin-bottom: -5000px;
+    padding-bottom: 5000px; }
     .boss-sidebar-wrap li {
       list-style: none;
       color: #cca12c;
@@ -601,43 +531,6 @@ textarea {
     text-align: right;
     color: #15264f; } }
 @media (max-width: 1200px) {
-  .blog-detail-wrap {
-    padding-bottom: 40px; }
-    .blog-detail-wrap img {
-      width: 50%;
-      padding-right: 20px;
-      padding-bottom: 20px; }
-
-  .blog-detail-title .bar-div {
-    width: 75px;
-    border-top: 10px solid #cca12c;
-    margin-top: 10px;
-    margin-bottom: 20px; }
-  .blog-detail-title h1 {
-    font-weight: bold;
-    color: #15264f; }
-
-  .prof-filter-col {
-    margin-bottom: 40px; }
-    .prof-filter-col .prof-filter-wrap {
-      width: 300px;
-      float: left; }
-    .prof-filter-col select {
-      height: 42px;
-      font-size: 18px; }
-    .prof-filter-col .filter-prof-button {
-      width: 100px;
-      float: left;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background: #cca12c;
-      text-align: center;
-      color: white;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer; }
-
   .single-agent-cont {
     padding-bottom: 60px; }
 
@@ -1597,7 +1490,7 @@ textarea {
   .featured-archive-wrap h2 {
     font-size: 18px !important; }
   .featured-archive-wrap h3 {
-    font-size: 18px !important;
+    font-size: 14px !important;
     margin-bottom: 0px !important; }
   .featured-archive-wrap .listing-detail {
     font-size: 14px !important; }
@@ -1754,7 +1647,8 @@ textarea {
     .business-type h2 {
       color: white;
       font-weight: bold;
-      font-size: 22px; }
+      font-size: 22px;
+      min-height: 64px; }
     .business-type h3 {
       color: white; }
 
@@ -2614,8 +2508,8 @@ textarea {
     margin-top: -6px;
     padding: 0px;
     width: 25% !important;
-    margin-bottom: -6000px;
-    padding-bottom: 6000px; }
+    margin-bottom: -5000px;
+    padding-bottom: 5000px; }
     .boss-sidebar-wrap li {
       list-style: none;
       color: #cca12c;
@@ -2782,10 +2676,11 @@ textarea {
     .business-type h2 {
       color: white;
       font-weight: bold;
-      font-size: 18px; }
+      font-size: 18px;
+      min-height: 64px; }
     .business-type h3 {
       color: white;
-      font-size: 18px; }
+      font-size: 14px; }
 
   .listing-detail {
     font-size: 14px;
@@ -2881,47 +2776,6 @@ textarea {
   .fa-bars {
     display: none !important; } }
 @media (max-width: 980px) {
-  .blog-detail-wrap {
-    padding-bottom: 40px; }
-    .blog-detail-wrap img {
-      width: 100%;
-      padding-right: 20px;
-      padding-bottom: 20px; }
-
-  .blog-detail-title .bar-div {
-    width: 75px;
-    border-top: 10px solid #cca12c;
-    margin-top: 10px;
-    margin-bottom: 20px; }
-  .blog-detail-title h1 {
-    font-weight: bold;
-    color: #15264f; }
-
-  .prof-filter-col {
-    margin-bottom: 40px;
-    overflow: auto; }
-    .prof-filter-col .prof-filter-wrap {
-      width: 100%;
-      float: left;
-      margin-bottom: 20px; }
-    .prof-filter-col select {
-      height: 42px;
-      font-size: 18px;
-      width: 100%; }
-    .prof-filter-col .filter-prof-button {
-      width: 100%;
-      float: left;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background: #cca12c;
-      text-align: center;
-      color: white;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-bottom: 20px; }
-
   .featured-desc-wrapper {
     background: #15264f; }
     .featured-desc-wrapper .container {
@@ -3955,7 +3809,7 @@ textarea {
       font-size: 18px; }
     .business-type h3 {
       color: white;
-      font-size: 18px; }
+      font-size: 14px; }
 
   .listing-detail {
     font-size: 14px;
