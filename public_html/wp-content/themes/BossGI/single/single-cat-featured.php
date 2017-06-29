@@ -5,15 +5,17 @@ $cat = get_the_category();
 $current_cat_id = $cat[0]->cat_ID; // current category ID 
 
 $args = array( 
-    'category' => $current_cat_id,
+    'category' => 4,
     'orderby'  => 'post_date',
-    'order'    => 'DESC'
+    'order'    => 'DESC',
+	'numberposts' => 40
 );
 $posts = get_posts( $args );
 // get IDs of posts retrieved from get_posts
 $ids = array();
 foreach ( $posts as $thepost ) {
     $ids[] = $thepost->ID;
+
 }
 // get and echo previous and next post in the same category
 $thisindex = array_search( $post_id, $ids );
