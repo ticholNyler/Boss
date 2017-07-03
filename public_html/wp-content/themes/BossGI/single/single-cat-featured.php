@@ -56,33 +56,33 @@ get_header();
 				<!--End Top Section-->
 				
 				<!--First Financial Section-->
-		<div class="row first-financial">
-			<div class="col-md-2 col-xs-6 finance-head">
+		<div class="first-financial">
+			<div class="col-md-3 col-xs-6 finance-head">
 				<div>Asking Price:</div>
 				<div>Down Payment:</div>
 				<div>Financing Available:</div>
 			</div>
-			<div class="col-md-2 col-xs-6 finance-data">
-				<div><?php the_field('asking_price'); ?></div>
-				<div><?php the_field('down_payment'); ?></div>
+			<div class="col-md-3 col-xs-6 finance-data">
+				<div><?php echo '$' . number_format(get_field('asking_price'),0,'.',','); ?></div>
+				<div><?php echo '$' . number_format(get_field('down_payment'),0,'.',','); ?></div>
 				<div><?php the_field('financing_available'); ?></div>
 			</div>
-			<div class="col-md-2 col-xs-6 finance-head">
+			<div class="col-md-3 col-xs-6 finance-head">
 				<div>Gross Income:</div>
 				<div>Adjust Net:</div>
 				<div>Year Established:</div>
 			</div>
-			<div class="col-md-2 col-xs-6 finance-data">
-				<div><?php the_field('gross_income'); ?></div>
-				<div><?php the_field('adjust_net'); ?></div>
+			<div class="col-md-3 col-xs-6 finance-data">
+				<div><?php echo '$' . number_format(get_field('gross_income'), 0,'.',','); ?></div>
+				<div><?php echo '$' . number_format(get_field('adjust_net'),0,'.',','); ?></div>
 				<div><?php the_field('year_established'); ?></div>
 			</div>
-			<div class="col-md-2 col-xs-6 finance-head">
+			<div class="col-md-3 col-xs-6 finance-head">
 				<div>Category:</div>
 				<div>County:</div>
 				<div>State:</div>
 			</div>
-			<div class="col-md-2 col-xs-6 finance-data">
+			<div class="col-md-3 col-xs-6 finance-data">
 				<div><?php the_field('category'); ?></div>
 				<div><?php the_field('county'); ?></div>
 				<div><?php the_field('state'); ?></div>
@@ -161,10 +161,10 @@ get_header();
 				<div>Leasehold:</div>
 			</div>
 			<div class="col-md-3 col-xs-3 finance-data">
-				<div><?php echo $arMain;?></div>
-				<div><?php echo $invMain;?></div>
-				<div><?php echo $ffMain;?></div>
-				<div><?php echo $leaseMain;?></div>
+				<div><?php echo '$' . number_format($arMain,0,'.',',');?></div>
+				<div><?php echo '$' . number_format($invMain,0,'.',',');?></div>
+				<div><?php echo '$' . number_format($ffMain,0,'.',',');?></div>
+				<div><?php echo '$' . number_format($leaseMain,0,'.',',');?></div>
 			</div>
 			<div class="col-md-2 col-xs-1 finance-head">
 				<div>Incl:</div>
@@ -187,10 +187,10 @@ get_header();
 				<div>Total Assets:</div>
 			</div>
 			<div class="col-md-3 col-xs-3 finance-data">
-				<div><?php echo $realMain;?></div>
-				<div><?php echo $liabilitiesMain;?></div>
-				<div><?php echo $otherMain;?></div>
-				<div><?php echo $assetsMain;?></div>
+				<div><?php echo '$' . number_format($realMain, 0, '.',',');?></div>
+				<div><?php echo '$' . number_format($liabilitiesMain,0 ,'.',',');?></div>
+				<div><?php if($otherMain){echo $otherMain;}else{echo "N/A";}?></div>
+				<div><?php echo '$' . number_format($assetsMain,0,'.',',');?></div>
 			</div>
 			<div class="col-md-2 col-xs-1 finance-head">
 				<div>Incl:</div>
@@ -201,7 +201,7 @@ get_header();
 			<div class="col-md-3 col-xs-2 finance-data last-col">
 				<div><?php echo $realIncl;?></div>
 				<div><?php echo $liabilitiesIncl;?></div>
-				<div><?php echo $otherIncl;?></div>
+				<div><?php if($otherIncl){echo $otherIncl;}else{echo "N/A";}?></div>
 				<div><?php echo $assetsIncl;?></div>
 			</div>
 		</div>
@@ -239,13 +239,13 @@ get_header();
 		    <?php $count++;?>
 			<?php $year = get_sub_field('year');?>
 			<?php $report = get_sub_field('report_type');?>
-			<?php $gross = get_sub_field('gross_income');?>
-			<?php $cogs = get_sub_field('cogs');?>
-			<?php $grossProfit = get_sub_field('gross_profit');?>
-			<?php $expenses = get_sub_field('expenses');?>
-			<?php $net = get_sub_field('net');?>
-			<?php $adbacks = get_sub_field('adbacks');?>
-			<?php $benefit = get_sub_field('owner_benefit');?>
+			<?php $gross = '$' . number_format(get_sub_field('gross_income'),0,'.', ',');?>
+			<?php $cogs = '$' . number_format(get_sub_field('cogs'), 0, '.', ',');?>
+			<?php $grossProfit = '$' . number_format(get_sub_field('gross_profit'), 0,'.',',');?>
+			<?php $expenses = '$' . number_format(get_sub_field('expenses'), 0, '.',',');?>
+			<?php $net = '$' . number_format(get_sub_field('net'), 0, '.',',');?>
+			<?php $adbacks = '$' . number_format(get_sub_field('adbacks'), 0, '.',',');?>
+			<?php $benefit = '$' . number_format(get_sub_field('owner_benefit'),0,'.',',');?>
 			
 			<div class="<?php echo $col;?> finance_section">
 				<div class="col-md-7 col-xs-6 finance-head <?php if($count == 1 || $count % 4 == 0){echo 'first-col';}?>">
@@ -293,9 +293,9 @@ get_header();
 				<div>Square Footage:</div>
 			</div>
 			<div class="col-md-4 col-xs-6 finance-data">
-				<div><?php the_field('rent_price'); ?></div>
+				<div><?php echo '$'. number_format(get_field('rent_price'),0,'.',','); ?></div>
 				<div><?php the_field('building_type'); ?></div>
-				<div><?php the_field('square_footage'); ?></div>
+				<div><?php if(get_field('square_footage')){the_field('square_footage');}else{echo "N/A";}; ?></div>
 			</div>
 		</div>
 	</div>

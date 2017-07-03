@@ -24,10 +24,7 @@ $dk-blue:#070f30;
 #page-container{
 	overflow:hidden;
 }
-.page_nav{
-	width:100%;
-	float:left;
-}
+
 .blog-head-wrap{
 	margin-top:40px;
 }
@@ -1947,7 +1944,7 @@ textarea {
 			font-size:18px !important;
 		}
 		h3{
-			font-size:14px !important;
+			font-size:18px !important;
 			margin-bottom:0px !important;
 		}
 		
@@ -2163,7 +2160,7 @@ font-family: FontAwesome;
 			color:white;
 			font-weight:bold;
 			font-size:22px;
-			min-height:64px;
+			min-height: 80px;
 		}
 		h3{
 			color:white;
@@ -3491,11 +3488,10 @@ font-family: FontAwesome;
 			color:white;
 			font-weight:bold;
 			font-size:18px;
-			min-height:64px;
 		}
 		h3{
 			color:white;
-			font-size:14px;
+			font-size:18px;
 		}
 	}
 	
@@ -4962,7 +4958,7 @@ font-family: FontAwesome;
 		}
 		h3{
 			color:white;
-			font-size:14px;
+			font-size:18px;
 		}
 	}
 	
